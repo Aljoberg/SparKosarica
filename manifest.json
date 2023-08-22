@@ -1,0 +1,18 @@
+{
+    "name": "SparKošarica",
+    "version": "1.0",
+    "description": "Doda funkcijo, ki ti omogoči, da izbereš izdelke, ki si jih že kupil, in ti jih da v košarico.",
+    "manifest_version": 3,
+    "author": "Aljo",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "16": "logo.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://www.spar.si/*"],
+        "js": ["script2.js"]
+    }]
+}
